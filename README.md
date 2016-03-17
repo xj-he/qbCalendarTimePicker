@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:8080 in your browser.
+Open http://localhost:8090 in your browser.
 
 Static files are served from the `public` folder, project JavaScript files are bundled from the `component` folder.
 
