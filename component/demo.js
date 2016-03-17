@@ -1,0 +1,50 @@
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import DateTimeField from "react-bootstrap-datetimepicker";
+import DateTimePicker from "react-bootstrap-datetimepicker";
+import DateTimePickerDate from "react-bootstrap-datetimepicker";
+import QBCalendarTimePicker from "./qbCalendarTimePicker";
+
+class Demo extends Component {
+	
+	render() {
+		return (
+			<div className="container">
+		      <div className="row">
+	            <div className="col-xs-6">
+	              <h5>Example [DateTimeField widget]</h5>
+	              <DateTimeField defaultText="Please select a date"/>
+	            </div>
+	          </div>
+	          <hr/>
+	          <div className="row">
+	            <div className="col-xs-6">
+	              <h5>Example [DateTimePickerDate] under time mode</h5>
+	              <DateTimePickerDate mode="time"/>
+	            </div>
+	          </div>
+	          <hr/>
+	          
+	          <div className="row">
+	          	<div className="col-xs-12">
+	              <h5>Example QBCalendarTimePicker with [react-bootstrap-datetimepicker] implementation</h5>
+	            </div>
+	            <div className="col-xs-6">
+	              <QBCalendarTimePicker range={'fromto'}/>
+	            </div>
+	          </div>
+	          <hr/>
+	          <div className="row">
+	          	<div className="col-xs-12">
+	              <h5>Example QBCalendarTimePicker with [react-bootstrap-daterangepicker] implementation</h5>
+	            </div>
+	            <div className="col-xs-6">
+	              <QBCalendarTimePicker range={'group'}/>
+	            </div>
+	          </div>
+			</div>
+		);
+	}
+}
+
+ReactDOM.render(React.createFactory(Demo)(), document.getElementById("root"));
